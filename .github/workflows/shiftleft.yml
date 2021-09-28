@@ -86,7 +86,7 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: 14
-    - run: npm install jwt-decode node-fetch
+    - run: npm install jwt-decode node-fetch@2
       if: github.event_name == 'pull_request'
 
     - name: Notify Benchmark Results
